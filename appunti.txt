@@ -1,0 +1,15 @@
+Frase top: Noi ci siamo, con cura
+Logo da mettere, me lo manda
+devo pesacare il colore corretto da sostituire al verde
+telefono: 039 6369757  meglio se manda su whatsapp 
+orari: li togliamo
+email: centroconcura@gmail.com
+
+primo elemento ha chi siamo sulla sinistra e logo sulla destra, su mobile il logo va sopra
+chi siamo: (immagine)
+
+
+il footer ripete i contatti, affiancati su pc, uno sotto l'altro su mobile
+
+
+
