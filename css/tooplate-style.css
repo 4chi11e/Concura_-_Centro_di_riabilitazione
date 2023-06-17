@@ -16,12 +16,25 @@ http://www.tooplate.com/view/2098-health
 
 
   /*---------------------------------------
+     COLORS              
+  -----------------------------------------*/
+  :root {
+    /* --verde: #a5c422 */
+    --verde: #209a67;
+    --blu-scuro: #3b5998;
+    --blu: #4267b2;
+    --azzurro: #1da1f2;
+  }
+
+
+  /*---------------------------------------
      TYPOGRAPHY              
   -----------------------------------------*/
 
   h1,h2,h3,h4,h5,h6 {
     font-weight: 600;
     line-height: inherit;
+    /* color: #209a67 */
   }
 
   h1,h2,h3,h4 {
@@ -84,7 +97,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   a:hover, a:active, a:focus {
-    color: #a5c422;
+    color: var(--verde);
     outline: none;
   }
 
@@ -107,7 +120,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   .section-btn {
-    background: #a5c422;
+    background: var(--verde);
     border: 0;
     border-radius: 3px;
     color: #ffffff;
@@ -120,6 +133,9 @@ http://www.tooplate.com/view/2098-health
 
   .section-btn:hover {
     transform: translateY(-5px);
+    background: var(--blu);
+    color: #ffffff;
+    font-size: inherit;
   }
 
   .text-align-right {
@@ -141,7 +157,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   .btn-blue {
-    background: #4267b2;
+    background: var(--blu);
   }
 
   .news-thumb {
@@ -295,7 +311,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   header span i {
-    color: #a5c422;
+    color: var(--verde);
     margin-right: 5px;
   }
 
@@ -319,7 +335,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   .navbar-default .navbar-brand .fa {
-    color: #a5c422;
+    color: var(--verde);
   }
 
   .navbar-default .navbar-nav li.appointment-btn {
@@ -327,7 +343,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   .navbar-default .navbar-nav li.appointment-btn a {
-    background: #a5c422;
+    background: var(--verde);
     border-radius: 3px;
     color: #ffffff;
     font-weight: 600;
@@ -336,7 +352,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   .navbar-default .navbar-nav li.appointment-btn a:hover {
-    background: #4267b2;
+    background: var(--blu);
     color: #ffffff !important;
   }
 
@@ -451,15 +467,15 @@ http://www.tooplate.com/view/2098-health
     height: 650px;
   }
 
-  .slider .item-first {
+  .slider .item-1 {
     background-image: url(../images/slider1.jpg);
   }
 
-  .slider .item-second {
+  .slider .item-2 {
     background-image: url(../images/slider2.jpg);
   }
 
-  .slider .item-third {
+  .slider .item-3 {
     background-image: url(../images/slider3.jpg);
   }
 
@@ -570,7 +586,7 @@ http://www.tooplate.com/view/2098-health
   -----------------------------------------*/
 
   #service {
-    background: #a5c422;
+    background: var(--verde);
   }
 
   #service h2,
@@ -590,7 +606,7 @@ http://www.tooplate.com/view/2098-health
     font-size: 50px;
     margin-bottom: 10px;
     background: #ffffff;
-    color: #a5c422;
+    color: var(--verde);
     width: 120px;
     height: 120px;
     line-height: 120px;
@@ -656,7 +672,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   .news-social-share .btn-primary {
-    background: #3b5998;
+    background: var(--blu-scuro);
   }
 
   .news-social-share .btn-success {
@@ -742,7 +758,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   .news-tags li a:hover {
-    background: #4267b2;
+    background: var(--blu);
   }
 
 
@@ -777,7 +793,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   #appointment button#cf-submit {
-    background: #a5c422;
+    background: var(--verde);
     color: #ffffff;
     font-weight: 600;
     height: 55px;
@@ -807,7 +823,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   footer a:hover {
-    color: #4267b2;
+    color: var(--blu);
   }
 
   .contact-info {
@@ -902,7 +918,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   .angle-up-btn a:hover {
-    background: #4267b2;
+    background: var(--blu);
     color: #ffffff;
     transform: translateY(-5px);
   }
@@ -937,7 +953,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   .social-icon li a:hover {
-    background: #4267b2;
+    background: var(--blu);
     color: #ffffff;
   }
 
