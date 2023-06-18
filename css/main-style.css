@@ -30,6 +30,7 @@ body {
     background: white;
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
+    height: 100%;
 }
 
 
@@ -301,16 +302,29 @@ a:focus {
 #about {
     /* background: url('../images/about-bg.jpg') no-repeat top center; */
     /* background-size: cover; */
-    padding-top: 170px;
-    padding-bottom: 170px;
+    /* padding-top: 170px; */
+    /* padding-bottom: 170px; */
     /* background: white; */
+    height: 100vh;
 }
 
 #about .container {
+    height: 100%;
+    padding: 0;
+    padding-bottom: 85px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /* justify-content: flex-start; */
     align-items: center;
+}
+
+#about #container-testo {
+    /* flex: 0 0 520px; */
+    /* flex-basis: 520px; */
+}
+
+#about #about-logo {
+    /* flex: 1; */
 }
 
 #about h2 {
@@ -328,9 +342,14 @@ a:focus {
     padding-bottom: 3px;
 }
 
-#about .about-logo img {
+#about #about-logo {
+    text-align: center;
+}
+
+#about #about-logo img {
     /* height: 500px; */
-    width: 500px;
+    /* width: 500px; */
+    width: 100%;
 }
 
 
@@ -526,9 +545,28 @@ footer .container {
 }
 
 @media only screen and (max-width: 992px) {
-    #about .about-logo img {
-        width: 350px;
+    
+    #about .container {
+        padding: 20px;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
     }
+    #about #container-testo {
+        /* flex: auto; */
+        width: 100%;
+    }
+    #about #about-logo {
+        /* flex: auto; */
+        width: 100%;
+    }
+    #about #about-logo img {
+        /* flex: auto; */
+        width: 80%;
+    }
+
+
+
     #team .griglia .elemento {
         width: 50%;
     }
@@ -551,15 +589,8 @@ footer .container {
         padding-bottom: 8px;
     }
 
-    #about .container {
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-    }
-    #about .about-logo {
-        margin-bottom: 50px;
-    }
-    #about .about-logo img {
-        width: 450px;
+    #team .container {
+        padding: 20px;
     }
 
     #team .griglia {
