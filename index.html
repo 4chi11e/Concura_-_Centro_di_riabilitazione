@@ -12,7 +12,10 @@
     <meta name="author" content="Tooplate">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
@@ -23,48 +26,46 @@
 
 </head>
 
-<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
-
+<body id="top">
     <!-- PRE LOADER -->
     <section class="preloader">
         <div class="spinner">
-
             <span class="spinner-rotate"></span>
-
         </div>
     </section>
 
-    <!-- NAVBAR o HEADER -->
-    <section class="navbar navbar-default navbar-static-top" role="navigation">
+    <!-- HEADER -->
+    <header>
         <div class="container">
 
-            <div class="navbar-header">
-                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                </button>
+            <a href="index.html" class="header__logo">
+                <img src="images/logo-concura-grigio-sfondo-trasparente.png" alt="logo concura">
+            </a>
 
-                <!-- lOGO TEXT HERE -->
-                <a href="index.html" class="navbar-brand"> <img src="images/logo-concura-grigio-sfondo-trasparente.png"
-                        alt="logo concura"></a>
+            <!-- <div class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> -->
+            <div class="header__icon-bar">
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
             </div>
+            
+            <div class="header__contatti">
+                <a href="mailto:">
+                    <span class="icon email-icon"> <i class="fa fa-envelope-o"></i></span>
+                    centroconcura@gmail.com
+                </a>
+                
+                <a href="https://wa.me/0396369757">
+                    <span class="icon phone-icon"><i class="fa fa-whatsapp"></i></span> 039 6369757
+                </a>
 
-            <!-- MENU LINKS -->
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="mailto:"><span class="icon email-icon"><i class="fa fa-envelope-o"></i></span>
-                            centroconcura@gmail.com</a></li>
-                    <li><a href="https://wa.me/0396369757"><span class="icon phone-icon"><i
-                                    class="fa fa-whatsapp"></i></span> 039 6369757</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100093882150811"><span
-                                class="icon phone-icon"><i class="fa fa-facebook-square"></i></span> Centro Concura</a>
-                    </li>
-                </ul>
+                <a href="https://www.facebook.com/profile.php?id=100093882150811">
+                    <span class="icon phone-icon"><i class="fa fa-facebook-square"></i></span>
+                    Centro Concura
             </div>
 
         </div>
-    </section>
+    </header>
 
     <!-- ABOUT -->
     <section id="about">
