@@ -239,11 +239,13 @@ header {
 
 .header__icon-bar:hover span {
     background: var(--medio);
-} 
+}
 
-.header__contatti{
+.header__contatti {
     height: 100%;
     float: right;
+    -webkit-animation: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 .header__contatti a {
     display: inline-block;
@@ -264,6 +266,26 @@ header {
 .header__contatti a:hover span {
     font-size: 20px;
     color: var(--medio);
+}
+
+@media only screen and (max-width: 767px) {
+    .header__icon-bar {
+        display: block;
+    }
+    .header__contatti {
+        display: none;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+    }
+    .header__contatti a {
+        display: block;
+    }
+    .is-open {
+        height: 233px;
+        overflow: hidden;
+        z-index: 999;
+    }
 }
 
 /*---------------------------------------
@@ -631,6 +653,18 @@ footer .container {
 }
 
 @media only screen and (max-width: 767px) {
+    .header__icon-bar {
+        display: block;
+    }
+    .header__contatti {
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+    }
+    .header__contatti a {
+        display: block;
+    }
+
     .navbar-default .navbar-collapse,
     .navbar-default .navbar-form {
         border-color: transparent;
