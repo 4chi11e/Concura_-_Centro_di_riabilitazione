@@ -17,7 +17,7 @@ http://www.tooplate.com/view/2098-health
     --medio: #6c8ba3;
     --base: #577287;
     --scuro: #394f5f;
-    --scurissimo: #212629;
+    --scurissimo: #20272b;
 }
 
 body {
@@ -280,53 +280,9 @@ a:focus {
     }
 }
 
-/*---------------------------------------
-      Header             
-  -----------------------------------------*/
-
-header {
-    background: #ffffff;
-    border-bottom: 1px solid #f2f2f2;
-    display: flex;
-    height: 45px;
-}
-
-header .col-md-8 {
-    padding-right: 0;
-}
-
-header p,
-header span {
-    font-size: 12px;
-    line-height: 24px;
-    padding-top: 12px;
-}
-
-header a,
-header span {
-    color: #747474;
-}
-
-header span {
-    font-weight: 500;
-    display: inline-block;
-    padding: 11px 15px;
-}
-
-header span.date-icon {
-    border-left: 1px solid #f2f2f2;
-    border-right: 1px solid #f2f2f2;
-    padding-right: 19px;
-    padding-left: 19px;
-}
-
-header span i {
-    color: var(--verde);
-    margin-right: 5px;
-}
 
 /*---------------------------------------
-      MENU              
+      NAVBAR o HEADER              
   -----------------------------------------*/
 
 .navbar-default {
@@ -340,7 +296,6 @@ header span i {
 }
 
 .navbar-default .navbar-brand {
-    color: #393939;
     color: var(--base);
     font-weight: 500;
     padding: 0;
@@ -374,7 +329,7 @@ header span i {
 
 .navbar-default .navbar-nav li {
     color: var(--scuro);
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
     /* padding-right: 20px;
     padding-left: 20px; */
@@ -384,7 +339,7 @@ header span i {
 
 .navbar-default .navbar-nav .icon {
     margin-right: 5px;
-    color: var(--base);
+    color: var(--scuro);
     font-size: 15px;
     -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
@@ -392,7 +347,8 @@ header span i {
 
 .navbar-default .navbar-nav li a:hover,
 .navbar-default .navbar-nav li:hover .icon {
-    color: var(--scurissimo);
+    color: var(--medio);
+    font-size: 16px;
 }
 
 /* .navbar-default .navbar-nav li a {
@@ -601,11 +557,12 @@ header span i {
 }
 
 .team-thumb {
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
+    background-color: var(--chiarissimo);
     border-radius: 0 0 10px 10px;
     position: relative;
     overflow: hidden;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .team-info {
@@ -627,7 +584,13 @@ header span i {
     margin-bottom: 5px;
 }
 
-.team-contact-info {
+.team-info p,
+.team-info a,
+.team-info li {
+    color: var(--scuro);
+}
+
+/* .team-contact-info {
     border-top: 1px solid #e9e9e9;
     padding-top: 1.2em;
     margin-top: 1.5em;
@@ -674,39 +637,11 @@ header span i {
     transition-delay: 0.3s;
     transform: translateY(0px);
     top: -22em;
-}
+} */
 
-/*---------------------------------------
-     SERVICE              
-  -----------------------------------------*/
 
-#service {
-    background: var(--verde);
-}
 
-#service h2,
-#service h4 {
-    color: #ffffff;
-}
 
-#service p {
-    color: #d9d9d9;
-}
-
-#service .service-thumb {
-    padding: 0 22px;
-}
-
-#service .fa {
-    font-size: 50px;
-    margin-bottom: 10px;
-    background: #ffffff;
-    color: var(--verde);
-    width: 120px;
-    height: 120px;
-    line-height: 120px;
-    border-radius: 100%;
-}
 
 /*---------------------------------------
     CONTATTI         
@@ -741,11 +676,13 @@ header span i {
     color: var(--scuro);
     -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
+    font-size: 18px;
 }
 #contatti .contact-info p,
 #contatti .contact-info p a:hover,
 #contatti .contact-info p a:hover .fa {
     color: var(--medio);
+    font-size: 20px;
 }
 
 #contatti .contact-info .fa {
@@ -773,6 +710,12 @@ header span i {
 #google-map h2 {
     margin-bottom: 30px;
 }
+
+#google-map p {
+    margin: 0px 0px 20px 20px;
+    font-size: 20px;
+}
+
 
 /*---------------------------------------
      FOOTER              
