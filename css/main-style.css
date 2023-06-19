@@ -13,7 +13,7 @@
 
     --background: white;
 
-    --spessore-header: 80px; 
+    --spessore-header: 80px;
 }
 
 /*---------------------------------------
@@ -44,6 +44,7 @@ html {
 .container {
     max-width: 1170px;
     margin: auto;
+    padding: 0px 20px;
 }
 
 a {
@@ -213,6 +214,7 @@ header {
     /* background: white; */
     /* height: 80px; */
     height: var(--spessore-header);
+    z-index: 100;
 }
 
 header .container {
@@ -249,7 +251,7 @@ header .container {
 .header__contatti .contatto {
     font-size: 19px;
 }
-.header__contatti a:hover .icon{
+.header__contatti a:hover .icon {
     font-size: 23px;
     color: var(--medio);
 }
@@ -266,7 +268,7 @@ header .container {
     .header__contatti .contatto {
         font-size: 15px;
     }
-    .header__contatti a:hover .icon{
+    .header__contatti a:hover .icon {
         font-size: 19px;
         color: var(--medio);
     }
@@ -283,7 +285,7 @@ header .container {
     .header__contatti .icon {
         font-size: 26px;
     }
-    .header__contatti a:hover .icon{
+    .header__contatti a:hover .icon {
         font-size: 28px;
         color: var(--medio);
     }
@@ -291,7 +293,7 @@ header .container {
 
 @media only screen and (max-width: 450px) {
     header {
-        height: 70px
+        height: 70px;
     }
 }
 
@@ -454,7 +456,6 @@ header .container {
     }
 }
 
-
 /*---------------------------------------
     TEAM             
 -----------------------------------------*/
@@ -515,43 +516,45 @@ header .container {
 
 #contatti p {
     font-size: 20px;
+    margin: 10px 0px;
 }
 
-#contatti .griglia {
+.contatti__griglia {
     display: flex;
     flex-wrap: wrap;
 }
 
-#contatti .griglia #cella-contatti {
+#contatti__contatti {
     width: 60%;
-    padding: 20px;
-    padding-right: 40px;
+    padding: 0px 40px 0px 20px;
 }
 
-#contatti .griglia #cella-social {
+#contatti__social {
     width: 40%;
-    padding: 20px;
+    padding: 0px 20px 0px 20px;
 }
 
-#contatti .contact-info {
+.contatti__info {
     padding: 10px;
 }
-#contatti .contact-info p,
-#contatti .contact-info p a,
-#contatti .contact-info p a .fa {
+.contatti__info p,
+.contatti__info p a,
+.contatti__info p a .fa {
     color: var(--scuro);
     -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
     font-size: 18px;
+    padding: 0;
+    margin: 8px 0px;
 }
-#contatti .contact-info p,
-#contatti .contact-info p a:hover,
-#contatti .contact-info p a:hover .fa {
+.contatti__info p,
+.contatti__info p a:hover,
+.contatti__info p a:hover .fa {
     color: var(--medio);
     font-size: 20px;
 }
 
-#contatti .contact-info .fa {
+.contatti__info .fa {
     /* background: #393939;
     border-radius: 100%;
     color: #ffffff;
@@ -566,27 +569,72 @@ header .container {
     text-align: center;
     font-size: 24px;
     width: 35px;
-    height: 35px;
+    /* height: 35px; */
+}
+
+@media only screen and (max-width: 767px) {
+    #contatti__contatti {
+        width: 100%;
+        padding: 0px 0px 0px 20px;
+    }
+
+    #contatti__social {
+        width: 100%;
+        padding: 0px 0px 0px 20px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    #contatti__contatti {
+        width: 100%;
+        padding: 0px 0px 0px 10px;
+    }
+
+    #contatti__social {
+        width: 100%;
+        padding: 0px 0px 0px 10px;
+    }
+    #contatti p {
+        font-size: 16px;
+        margin: 10px 0px;
+    }
+    .contatti__info p,
+    .contatti__info p a,
+    .contatti__info p a .fa {
+        font-size: 16px;
+        padding: 0;
+        margin: 8px 0px;
+    }
+    .contatti__info p,
+    .contatti__info p a:hover,
+    .contatti__info p a:hover .fa {
+        font-size: 18px;
+    }
 }
 
 /*---------------------------------------
-    MAP           
+    DOVE TROVARCI           
   -----------------------------------------*/
-
-#google-map h2 {
-    margin-bottom: 30px;
+#dove-trovarci .container {
+    padding: 0px;
 }
 
-#google-map p {
-    margin: 0px 0px 20px 20px;
+.dove-trovarci__testo {
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+.dove-trovarci__testo h2 {
+    margin-bottom: 20px;
+}
+
+.dove-trovarci__testo p {
+    margin: 0px;
+    margin-left: 20px;
+    margin-bottom: 5px;
     font-size: 20px;
 }
 
-#google-map {
-    line-height: 0;
-    margin: 0;
-    padding: 0;
-}
 
 /*---------------------------------------
      FOOTER              
