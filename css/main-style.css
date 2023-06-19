@@ -27,6 +27,9 @@
 html,
 body {
     height: 100%;
+    /* min-width: 375px; */
+    /* min-width: 467px; */
+    /* overflow: scroll; */
 }
 
 body {
@@ -45,6 +48,7 @@ html {
     max-width: 1170px;
     margin: auto;
     padding: 0px 20px;
+    overflow:visible;
 }
 
 a {
@@ -209,7 +213,7 @@ header {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.075);
     border: none;
     margin-bottom: 0;
-    padding: 10px;
+    padding: 10px 0px;
     /* background: var(--chiarissimo); */
     /* background: white; */
     /* height: 80px; */
@@ -284,6 +288,7 @@ header .container {
     }
     .header__contatti .icon {
         font-size: 26px;
+        padding-right: 2px;
     }
     .header__contatti a:hover .icon {
         font-size: 28px;
@@ -297,13 +302,26 @@ header .container {
     }
 }
 
+@media only screen and (max-width: 400px) {
+    header {
+        height: 60px;
+    }
+    .header__contatti .icon {
+        font-size: 22px;
+    }
+    .header__contatti a:hover .icon {
+        font-size: 24px;
+        color: var(--medio);
+    }
+}
+
 /*---------------------------------------
     HOME              
 -----------------------------------------*/
 
 #home {
     height: 100vh;
-    min-height: 800px;
+    /* min-height: 800px; */
     /* padding: 0px 20px 0px 20px; */
 }
 
@@ -319,6 +337,7 @@ header .container {
 }
 .home__testo {
     min-width: 630px;
+    /* width: 50%; */
 }
 .home__testo h2 {
     font-size: 70px;
@@ -333,13 +352,23 @@ header .container {
     color: var(--scuro);
 }
 .home__testo__paragrafo img {
+    display: inline-block;
     height: 21px;
-    padding-bottom: 3px;
+    padding-bottom: -10px;
 }
 
 .home__logo {
+    display: flex;
+    align-items: center;
     text-align: center;
     /* max-height: 50%; */
+    /* border: 2px solid red; */
+    width: 50%;
+    height: 100%;
+/* 
+    background-image: url("./images/logo-grande.png");
+    background-size: cover;
+    background-position: center center; */
 }
 
 .home__logo img {
@@ -361,8 +390,7 @@ header .container {
         color: var(--scuro);
     }
     .home__testo__paragrafo img {
-        height: 21px;
-        padding-bottom: 3px;
+        height: 17px;
     }
 }
 
@@ -381,18 +409,23 @@ header .container {
         color: var(--scuro);
     }
     .home__testo__paragrafo img {
-        height: 21px;
-        padding-bottom: 3px;
+        height: 15px;
     }
 }
 
 @media only screen and (max-width: 767px) {
     #home .container {
-        flex-wrap: wrap;
-        justify-content: center;
+        display: block;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
     }
     .home__testo {
+        margin: auto;
+        padding-top: 20px;
+        /* min-width: 520px; */
         min-width: 520px;
+        max-height: 40%;
     }
     .home__testo h2 {
         font-size: 60px;
@@ -403,16 +436,25 @@ header .container {
         font-weight: 500;
         color: var(--scuro);
     }
+    .home__testo__paragrafo img {
+        height: 17px;
+    }
     .home__logo {
+        /* margin: auto; */
         width: 100%;
+        height: 50%;
+        /* max-height: 60%; */
         /* max-height: 450px; */
         /* max-height: 50%; */
         text-align: center;
-        padding: 0 20px;
+        /* padding: 0 20px; */
+        padding: 20px 0px;
     }
     .home__logo img {
+        margin: auto;
         max-width: 100%;
-        max-height: 450px;
+        /* max-height: 350px; */
+        max-height: 100%;
         width: auto;
         height: auto;
     }
@@ -424,6 +466,7 @@ header .container {
     }
     .home__testo h2 {
         font-size: 50px;
+        margin-bottom: 18px;
     }
     .home__testo__paragrafo {
         font-size: 20px;
@@ -432,8 +475,7 @@ header .container {
         color: var(--scuro);
     }
     .home__testo__paragrafo img {
-        height: 21px;
-        padding-bottom: 3px;
+        height: 15px;
     }
 }
 
@@ -451,8 +493,7 @@ header .container {
         color: var(--scuro);
     }
     .home__testo__paragrafo img {
-        height: 21px;
-        padding-bottom: 3px;
+        height: 15px;
     }
 }
 
@@ -634,7 +675,6 @@ header .container {
     margin-bottom: 5px;
     font-size: 20px;
 }
-
 
 /*---------------------------------------
      FOOTER              
