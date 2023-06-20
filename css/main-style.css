@@ -319,23 +319,42 @@ header .container {
     }
 }
 
+@media only screen and (max-width: 334px) {
+    
+    .header__contatti .icon {
+        font-size: 17px;
+    }
+    .header__contatti a {
+        margin: 7px;
+        padding: 0;
+    }
+    .header__contatti a:hover .icon {
+        font-size: 19px;
+        color: var(--medio);
+    }
+    .header__logo img {
+        height: auto;
+        width: 120px;
+    }
+}
+
 /*---------------------------------------
     HOME              
 -----------------------------------------*/
 
 #home {
-    height: 100vh;
+    min-height: 100vh;
     /* min-height: 800px; */
     /* padding: 0px 20px 0px 20px; */
 }
 
 #home .container {
     height: 100%;
-    padding: 0;
-    padding: 75px 20px;
+    padding: 20px;
+    padding-top: 95px;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-around;
     /* justify-content: flex-start; */
     align-items: center;
 }
@@ -367,7 +386,7 @@ header .container {
     text-align: center;
     /* max-height: 50%; */
     /* border: 2px solid red; */
-    width: 50%;
+    /* width: 50%; */
     height: 100%;
     /* 
     background-image: url("./images/logo-grande.png");
@@ -376,7 +395,8 @@ header .container {
 }
 
 .home__logo img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -446,7 +466,8 @@ header .container {
     .home__logo {
         /* margin: auto; */
         width: 100%;
-        height: 50%;
+        /* height: 50%; */
+        max-height: 50vh;
         /* max-height: 60%; */
         /* max-height: 450px; */
         /* max-height: 50%; */
@@ -456,9 +477,8 @@ header .container {
     }
     .home__logo img {
         margin: auto;
-        max-width: 100%;
-        /* max-height: 350px; */
-        max-height: 100%;
+        height: 100%;
+        /* max-width: 100%; */
         width: auto;
         height: auto;
     }
@@ -498,6 +518,18 @@ header .container {
     }
     .home__testo__paragrafo img {
         height: 15px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #home .container {
+        padding-top: 75px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #home .container {
+        padding-top: 65px;
     }
 }
 
