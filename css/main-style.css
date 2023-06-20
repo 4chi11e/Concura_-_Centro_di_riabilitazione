@@ -501,20 +501,23 @@ header .container {
     }
 }
 
+
+
 /*---------------------------------------
     TEAM             
 -----------------------------------------*/
 
 #team .griglia {
+    margin-left: -20px;
     display: flex;
     flex-wrap: wrap;
     /* justify-content: space-between; */
 }
 
 #team .griglia .elemento {
-    padding-bottom: 30px;
-    padding-right: 30px;
-    width: 33%;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    width: 33.333%;
 }
 
 #team .griglia .elemento img {
@@ -531,7 +534,7 @@ header .container {
 }
 
 .team-info {
-    padding: 20px 30px;
+    padding: 15px 20px;
 }
 .team-info h3 {
     /* padding-bottom: 10px; */
@@ -546,7 +549,7 @@ header .container {
     padding-left: 15px;
 }
 .team-info li {
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 }
 
 .team-info p,
@@ -554,6 +557,21 @@ header .container {
 .team-info li {
     color: var(--scuro);
 }
+
+@media only screen and (max-width: 992px) {
+    #team .griglia .elemento {
+        width: 50%;
+    }
+}
+
+
+@media only screen and (max-width: 680px) {
+    #team .griglia .elemento {
+        width: 100%;
+    }
+}
+
+
 
 /*---------------------------------------
     CONTATTI         

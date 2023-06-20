@@ -14,8 +14,5 @@ il footer ripete i contatti, affiancati su pc, uno sotto l'altro su mobile
 
 
 da migliorare:
-- dimensione testo e contatti in contatti e social
-- dimensione titoli mobile
 - team
-- immagine concura inline nella home
 
