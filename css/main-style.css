@@ -5,6 +5,7 @@
 -----------------------------------------*/
 :root {
     --chiarissimo: #eff7ff;
+    --moltochiaro: #cadfef;
     --chiaro: #a6c5dd;
     --medio: #6c8ba3;
     --base: #577287;
@@ -795,22 +796,39 @@ header .container {
      FOOTER              
   -----------------------------------------*/
 
-footer .container {
-    display: flex;
-    flex-direction: row-reverse;
+footer {
+    margin-top: 50px;
 }
 
+footer .container {
+    /* display: flex;
+    flex-direction: row-reverse; */
+    border-top: 1px solid var(--moltochiaro);
+}
+
+
 .angle-up-btn {
-    margin: 20px;
+    position: relative;
+    /* top: -20px;
+    right: -40px; */
+    top: -20px;
+    right: 20px;
+    /* display: flex;
+    flex-direction: row-reverse; */
+    float: right;
+    width: 40px;
+    height: 40px;
 }
 
 .angle-up-btn a {
-    background: #ffffff;
+    position: relative;
+    right: 0px;
     background: var(--chiaro);
-    border: 1px solid #f2f2f2;
+    /* border: 2px solid #f2f2f2; */
     border-radius: 4px;
     font-size: 20px;
-    color: #393939;
+    /* color: #393939; */
+    color: var(--scurissimo);
     display: inline-block;
     text-align: center;
     width: 40px;
@@ -818,20 +836,38 @@ footer .container {
     line-height: 38px;
     transition: transform 0.1s ease-in;
     transform: translateX(0);
-
+    
     transition: all 0.2s ease-in-out;
 }
 
 .angle-up-btn a:hover {
     background: var(--base);
-    color: #ffffff;
+    color: var(--chiarissimo);
     transform: translateY(-5px);
 }
 
+.footer__testo {
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+#footer__testo__acapo {
+    display: none;
+}
+
+@media only screen and (max-width: 550px) {
+    #footer__testo__trattino {
+        display: none;
+    }
+    #footer__testo__acapo {
+        display: inline;
+    }
+}
 
 
 /*---------------------------------------
-    MEDIA QUERY GLOBALI              
+MEDIA QUERY GLOBALI              
 -----------------------------------------*/
 
 @media only screen and (max-width: 440px) {
