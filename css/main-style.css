@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,600");
 
 /*---------------------------------------
     VARIABILI              
@@ -34,7 +34,7 @@ body {
 body {
     /* background: var(--chiarissimo); */
     background: white;
-    font-family: "Poppins", sans-serif;
+    font-family: "Quicksand", sans-serif;
     overflow-x: hidden;
     height: 100%;
 }
@@ -101,7 +101,8 @@ h5,
 h6 {
     font-weight: 600;
     line-height: inherit;
-    color: var(--scurissimo);
+    /* color: var(--scurissimo); */
+    color: var(--base);
 }
 
 h1,
@@ -433,7 +434,7 @@ header .container {
 .home__testo__paragrafo {
     font-size: 30px;
     padding-left: 15px;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--scuro);
     
 }
