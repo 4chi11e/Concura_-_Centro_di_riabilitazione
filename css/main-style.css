@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,600");
 
 /*---------------------------------------
     VARIABILI              
@@ -34,7 +34,7 @@ body {
 body {
     /* background: var(--chiarissimo); */
     background: white;
-    font-family: "Poppins", sans-serif;
+    font-family: "Quicksand", sans-serif;
     overflow-x: hidden;
     height: 100%;
 }
@@ -101,7 +101,8 @@ h5,
 h6 {
     font-weight: 600;
     line-height: inherit;
-    color: var(--scurissimo);
+    /* color: var(--scurissimo); */
+    color: var(--base);
 }
 
 h1,
@@ -226,6 +227,7 @@ header {
 
 header .container {
     height: 100%;
+    overflow: hidden;
 }
 
 .header__logo {
@@ -255,15 +257,15 @@ header .container {
     font-size: 21px;
     padding-right: 4px;
 }
-.header__contatti .contatto {
-    font-size: 19px;
-}
 .header__contatti a:hover .icon {
     font-size: 23px;
     color: var(--medio);
 }
+.header__contatti .contatto {
+    font-size: 18px;
+}
 .header__contatti a:hover .contatto {
-    font-size: 21px;
+    font-size: 20px;
     color: var(--medio);
 }
 
@@ -276,17 +278,35 @@ header .container {
     padding: 20px;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
     .header__contatti .icon {
-        font-size: 17px;
+        font-size: 19px;
         padding-right: 2px;
+    }
+    .header__contatti a:hover .icon {
+        font-size: 21px;
+        color: var(--medio);
+    }
+    .header__contatti .contatto {
+        font-size: 16px;
+    }
+    .header__contatti a:hover .contatto {
+        font-size: 18px;
+        color: var(--medio);
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .header__contatti .icon {
+        font-size: 18px;
+        padding-right: 2px;
+    }
+    .header__contatti a:hover .icon {
+        font-size: 20px;
+        color: var(--medio);
     }
     .header__contatti .contatto {
         font-size: 15px;
-    }
-    .header__contatti a:hover .icon {
-        font-size: 19px;
-        color: var(--medio);
     }
     .header__contatti a:hover .contatto {
         font-size: 17px;
@@ -294,7 +314,25 @@ header .container {
     }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1040px) {
+    .header__contatti .icon {
+        font-size: 18px;
+        padding-right: 2px;
+    }
+    .header__contatti a:hover .icon {
+        font-size: 20px;
+        color: var(--medio);
+    }
+    .header__contatti .contatto {
+        font-size: 14px;
+    }
+    .header__contatti a:hover .contatto {
+        font-size: 16px;
+        color: var(--medio);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
     .header__contatti .contatto {
         display: none;
     }
@@ -308,21 +346,25 @@ header .container {
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
     header {
         height: 70px;
     }
-    .header-spacer {
+    /* .header-spacer {
         height: 70px;
-    }
+    } */
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
     header {
         height: 60px;
     }
-    .header-spacer {
+    /* .header-spacer {
         height: 60px;
+    } */
+    .header__contatti a {
+        /* margin: 8px; */
+        padding: 0;
     }
     .header__contatti .icon {
         font-size: 22px;
@@ -333,17 +375,17 @@ header .container {
     }
 }
 
-@media only screen and (max-width: 334px) {
+@media only screen and (max-width: 410px) {
     
-    .header__contatti .icon {
-        font-size: 17px;
-    }
     .header__contatti a {
         margin: 7px;
         padding: 0;
     }
-    .header__contatti a:hover .icon {
+    .header__contatti .icon {
         font-size: 19px;
+    }
+    .header__contatti a:hover .icon {
+        font-size: 21px;
         color: var(--medio);
     }
     .header__logo img {
@@ -392,7 +434,7 @@ header .container {
 .home__testo__paragrafo {
     font-size: 30px;
     padding-left: 15px;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--scuro);
     
 }
