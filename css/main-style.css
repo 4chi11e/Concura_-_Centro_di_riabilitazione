@@ -437,12 +437,14 @@ header .container {
     padding-left: 15px;
     font-weight: 600;
     color: var(--scuro);
-    
 }
 .home__testo__paragrafo img {
     display: inline-block;
     height: 21px;
     padding-bottom: -10px;
+}
+.home__testo__paragrafo__stretto {
+    display: none;
 }
 
 .home__logo {
@@ -561,6 +563,15 @@ header .container {
     }
     .home__testo__paragrafo img {
         height: 15px;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .home__testo__paragrafo__normale {
+        display: none;
+    }
+    .home__testo__paragrafo__stretto {
+        display: inline;
     }
 }
 
